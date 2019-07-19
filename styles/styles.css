@@ -529,3 +529,26 @@ div.content .items .product-price {
     content: 'logo';
   }
 }
+div.content .items a .checkitout {
+	font-weight: bold;
+	position: absolute;
+	content: '';
+	width: 180px;
+	height: 35px;
+	background: white;
+	border: 1px solid #38A9DE;
+	color: #38A9DE;
+	visibility: hidden;
+	text-align: center;
+	padding-top: 6px;
+	font-family: "Raleway", sans-serif;
+	font-size: 16px;
+	border-radius: 5px;
+	margin-top: 90%;
+	margin-left: 25%;
+}
+
+div.content .items a:hover .checkitout {
+	visibility: visible;
+
+}
