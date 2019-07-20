@@ -35,6 +35,10 @@ header nav {
 	text-align: center;
 }
 
+header nav .icon {
+	visibility: hidden;
+}
+
 header .logo {
 	width: 200px;
 	height: 200px;
@@ -528,6 +532,39 @@ div.content .items .product-price {
   header .logo:after {
     content: 'logo';
   }
+    div.search {
+    display: none;
+  }
+  header nav .icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: block;
+    visibility: visible;
+  }
+  header nav {
+    position: fixed;
+    z-index: 9;
+    right: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    padding-top: 100px;
+    transform: translateX(140px);
+    transition: all ease .3s;
+  }
+  header nav.opened {
+    background: rgba(50,50,50,0.95);
+    transform: translateX(0px);
+  }
+  header nav ul li {
+    display: block;
+    padding: 20px 0;
+  }
+
+  .checkitout {
+  	display: none;
+  }
 }
 div.content .items a .checkitout {
 	font-weight: bold;
@@ -551,4 +588,5 @@ div.content .items a .checkitout {
 div.content .items a:hover .checkitout {
 	visibility: visible;
 
+}
 }
